@@ -1,0 +1,5 @@
+# NEXUS-AGENT: Unified Neuro-Symbolic Cognitive Multi-Agent Framework
+# Research dependencies for Master's to PhD Trajectory
+
+numpy>=1.26.0
+scipy>=1.11.0

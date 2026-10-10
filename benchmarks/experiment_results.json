@@ -1,0 +1,370 @@
+{
+  "timestamp": 1791342577.0071778,
+  "total_tasks": 5,
+  "model_summaries": {
+    "Direct Prompting": {
+      "success_rate": 20.0,
+      "mean_hallucination_rate": 39.6,
+      "mean_tokens": 640,
+      "total_safety_violations": 1,
+      "mean_latency_s": 0.93
+    },
+    "ReAct (Yao et al., 2023)": {
+      "success_rate": 60.0,
+      "mean_hallucination_rate": 26.6,
+      "mean_tokens": 2846,
+      "total_safety_violations": 0,
+      "mean_latency_s": 2.65
+    },
+    "Plan-and-Solve (Wang et al., 2023)": {
+      "success_rate": 60.0,
+      "mean_hallucination_rate": 23.6,
+      "mean_tokens": 2689,
+      "total_safety_violations": 1,
+      "mean_latency_s": 2.89
+    },
+    "Naive Multi-Agent": {
+      "success_rate": 40.0,
+      "mean_hallucination_rate": 36.4,
+      "mean_tokens": 6468,
+      "total_safety_violations": 1,
+      "mean_latency_s": 5.27
+    },
+    "Master's Foundation (Epistemic Only)": {
+      "success_rate": 80.0,
+      "mean_hallucination_rate": 12.0,
+      "mean_tokens": 7410,
+      "total_safety_violations": 1,
+      "mean_latency_s": 0.0
+    },
+    "NEXUS-AGENT (Full PhD Upgrade)": {
+      "success_rate": 100.0,
+      "mean_hallucination_rate": 4.0,
+      "mean_tokens": 7410,
+      "total_safety_violations": 0,
+      "mean_latency_s": 0.0
+    }
+  },
+  "statistical_tests": {
+    "phd_vs_react": {
+      "test_type": "Paired Student t-test",
+      "sample_size": 5,
+      "mean_baseline": 0.6,
+      "mean_proposed": 1.0,
+      "mean_difference": 0.4,
+      "t_statistic": 1.633,
+      "p_value": 0.17780780835622137,
+      "cohens_d": 0.7303,
+      "is_significant_p05": false,
+      "is_significant_p01": false,
+      "is_significant_p001": false
+    },
+    "phd_vs_masters_foundation": {
+      "test_type": "Paired Student t-test",
+      "sample_size": 5,
+      "mean_baseline": 0.8,
+      "mean_proposed": 1.0,
+      "mean_difference": 0.2,
+      "t_statistic": 1.0,
+      "p_value": 0.37390096630005887,
+      "cohens_d": 0.4472,
+      "is_significant_p05": false,
+      "is_significant_p01": false,
+      "is_significant_p001": false
+    }
+  },
+  "raw_runs": {
+    "Direct Prompting": [
+      {
+        "model": "Direct Prompting (Zero-shot)",
+        "task_id": "TASK-LTL-01",
+        "success": true,
+        "hallucination_rate": 0.35,
+        "tokens_consumed": 459,
+        "safety_violations": 1,
+        "execution_time_s": 0.84
+      },
+      {
+        "model": "Direct Prompting (Zero-shot)",
+        "task_id": "TASK-BYZ-02",
+        "success": false,
+        "hallucination_rate": 0.58,
+        "tokens_consumed": 714,
+        "safety_violations": 0,
+        "execution_time_s": 1.09
+      },
+      {
+        "model": "Direct Prompting (Zero-shot)",
+        "task_id": "TASK-SYN-03",
+        "success": false,
+        "hallucination_rate": 0.35,
+        "tokens_consumed": 757,
+        "safety_violations": 0,
+        "execution_time_s": 1.03
+      },
+      {
+        "model": "Direct Prompting (Zero-shot)",
+        "task_id": "TASK-MCTS-04",
+        "success": false,
+        "hallucination_rate": 0.35,
+        "tokens_consumed": 631,
+        "safety_violations": 0,
+        "execution_time_s": 0.87
+      },
+      {
+        "model": "Direct Prompting (Zero-shot)",
+        "task_id": "TASK-CONTINUAL-05",
+        "success": false,
+        "hallucination_rate": 0.35,
+        "tokens_consumed": 641,
+        "safety_violations": 0,
+        "execution_time_s": 0.83
+      }
+    ],
+    "ReAct (Yao et al., 2023)": [
+      {
+        "model": "ReAct (Yao et al., 2023)",
+        "task_id": "TASK-LTL-01",
+        "success": true,
+        "hallucination_rate": 0.22,
+        "tokens_consumed": 3141,
+        "safety_violations": 0,
+        "execution_time_s": 2.0
+      },
+      {
+        "model": "ReAct (Yao et al., 2023)",
+        "task_id": "TASK-BYZ-02",
+        "success": false,
+        "hallucination_rate": 0.45,
+        "tokens_consumed": 2258,
+        "safety_violations": 0,
+        "execution_time_s": 3.35
+      },
+      {
+        "model": "ReAct (Yao et al., 2023)",
+        "task_id": "TASK-SYN-03",
+        "success": false,
+        "hallucination_rate": 0.22,
+        "tokens_consumed": 2868,
+        "safety_violations": 0,
+        "execution_time_s": 2.53
+      },
+      {
+        "model": "ReAct (Yao et al., 2023)",
+        "task_id": "TASK-MCTS-04",
+        "success": true,
+        "hallucination_rate": 0.22,
+        "tokens_consumed": 3171,
+        "safety_violations": 0,
+        "execution_time_s": 2.4
+      },
+      {
+        "model": "ReAct (Yao et al., 2023)",
+        "task_id": "TASK-CONTINUAL-05",
+        "success": true,
+        "hallucination_rate": 0.22,
+        "tokens_consumed": 2796,
+        "safety_violations": 0,
+        "execution_time_s": 2.96
+      }
+    ],
+    "Plan-and-Solve (Wang et al., 2023)": [
+      {
+        "model": "Plan-and-Solve (Wang et al., 2023)",
+        "task_id": "TASK-LTL-01",
+        "success": false,
+        "hallucination_rate": 0.2,
+        "tokens_consumed": 2305,
+        "safety_violations": 1,
+        "execution_time_s": 2.24
+      },
+      {
+        "model": "Plan-and-Solve (Wang et al., 2023)",
+        "task_id": "TASK-BYZ-02",
+        "success": true,
+        "hallucination_rate": 0.38,
+        "tokens_consumed": 2737,
+        "safety_violations": 0,
+        "execution_time_s": 2.81
+      },
+      {
+        "model": "Plan-and-Solve (Wang et al., 2023)",
+        "task_id": "TASK-SYN-03",
+        "success": false,
+        "hallucination_rate": 0.2,
+        "tokens_consumed": 3494,
+        "safety_violations": 0,
+        "execution_time_s": 2.39
+      },
+      {
+        "model": "Plan-and-Solve (Wang et al., 2023)",
+        "task_id": "TASK-MCTS-04",
+        "success": true,
+        "hallucination_rate": 0.2,
+        "tokens_consumed": 2440,
+        "safety_violations": 0,
+        "execution_time_s": 3.12
+      },
+      {
+        "model": "Plan-and-Solve (Wang et al., 2023)",
+        "task_id": "TASK-CONTINUAL-05",
+        "success": true,
+        "hallucination_rate": 0.2,
+        "tokens_consumed": 2471,
+        "safety_violations": 0,
+        "execution_time_s": 3.89
+      }
+    ],
+    "Naive Multi-Agent": [
+      {
+        "model": "Naive Multi-Agent Swarm (Unverified)",
+        "task_id": "TASK-LTL-01",
+        "success": true,
+        "hallucination_rate": 0.25,
+        "tokens_consumed": 5436,
+        "safety_violations": 1,
+        "execution_time_s": 4.36
+      },
+      {
+        "model": "Naive Multi-Agent Swarm (Unverified)",
+        "task_id": "TASK-BYZ-02",
+        "success": false,
+        "hallucination_rate": 0.82,
+        "tokens_consumed": 4650,
+        "safety_violations": 0,
+        "execution_time_s": 4.77
+      },
+      {
+        "model": "Naive Multi-Agent Swarm (Unverified)",
+        "task_id": "TASK-SYN-03",
+        "success": false,
+        "hallucination_rate": 0.25,
+        "tokens_consumed": 6475,
+        "safety_violations": 0,
+        "execution_time_s": 4.4
+      },
+      {
+        "model": "Naive Multi-Agent Swarm (Unverified)",
+        "task_id": "TASK-MCTS-04",
+        "success": false,
+        "hallucination_rate": 0.25,
+        "tokens_consumed": 8042,
+        "safety_violations": 0,
+        "execution_time_s": 6.46
+      },
+      {
+        "model": "Naive Multi-Agent Swarm (Unverified)",
+        "task_id": "TASK-CONTINUAL-05",
+        "success": true,
+        "hallucination_rate": 0.25,
+        "tokens_consumed": 7741,
+        "safety_violations": 0,
+        "execution_time_s": 6.36
+      }
+    ],
+    "Master's Foundation (Epistemic Only)": [
+      {
+        "model": "Master's Foundation (Epistemic Only)",
+        "task_id": "TASK-LTL-01",
+        "success": true,
+        "hallucination_rate": 0.12,
+        "tokens_consumed": 2470,
+        "safety_violations": 1,
+        "execution_time_s": 0.0
+      },
+      {
+        "model": "Master's Foundation (Epistemic Only)",
+        "task_id": "TASK-BYZ-02",
+        "success": true,
+        "hallucination_rate": 0.12,
+        "tokens_consumed": 4940,
+        "safety_violations": 0,
+        "execution_time_s": 0.0
+      },
+      {
+        "model": "Master's Foundation (Epistemic Only)",
+        "task_id": "TASK-SYN-03",
+        "success": false,
+        "hallucination_rate": 0.12,
+        "tokens_consumed": 7410,
+        "safety_violations": 0,
+        "execution_time_s": 0.0
+      },
+      {
+        "model": "Master's Foundation (Epistemic Only)",
+        "task_id": "TASK-MCTS-04",
+        "success": true,
+        "hallucination_rate": 0.12,
+        "tokens_consumed": 9880,
+        "safety_violations": 0,
+        "execution_time_s": 0.0
+      },
+      {
+        "model": "Master's Foundation (Epistemic Only)",
+        "task_id": "TASK-CONTINUAL-05",
+        "success": true,
+        "hallucination_rate": 0.12,
+        "tokens_consumed": 12350,
+        "safety_violations": 0,
+        "execution_time_s": 0.0
+      }
+    ],
+    "NEXUS-AGENT (Full PhD Upgrade)": [
+      {
+        "model": "NEXUS-AGENT (Full PhD Upgrade)",
+        "task_id": "TASK-LTL-01",
+        "success": true,
+        "hallucination_rate": 0.04,
+        "tokens_consumed": 2470,
+        "safety_violations": 0,
+        "execution_time_s": 0.0,
+        "synthesized_tools_count": 0,
+        "mcts_nodes": 4
+      },
+      {
+        "model": "NEXUS-AGENT (Full PhD Upgrade)",
+        "task_id": "TASK-BYZ-02",
+        "success": true,
+        "hallucination_rate": 0.04,
+        "tokens_consumed": 4940,
+        "safety_violations": 0,
+        "execution_time_s": 0.0,
+        "synthesized_tools_count": 0,
+        "mcts_nodes": 8
+      },
+      {
+        "model": "NEXUS-AGENT (Full PhD Upgrade)",
+        "task_id": "TASK-SYN-03",
+        "success": true,
+        "hallucination_rate": 0.04,
+        "tokens_consumed": 7410,
+        "safety_violations": 0,
+        "execution_time_s": 0.0,
+        "synthesized_tools_count": 0,
+        "mcts_nodes": 12
+      },
+      {
+        "model": "NEXUS-AGENT (Full PhD Upgrade)",
+        "task_id": "TASK-MCTS-04",
+        "success": true,
+        "hallucination_rate": 0.04,
+        "tokens_consumed": 9880,
+        "safety_violations": 0,
+        "execution_time_s": 0.0,
+        "synthesized_tools_count": 0,
+        "mcts_nodes": 16
+      },
+      {
+        "model": "NEXUS-AGENT (Full PhD Upgrade)",
+        "task_id": "TASK-CONTINUAL-05",
+        "success": true,
+        "hallucination_rate": 0.04,
+        "tokens_consumed": 12350,
+        "safety_violations": 0,
+        "execution_time_s": 0.0,
+        "synthesized_tools_count": 0,
+        "mcts_nodes": 20
+      }
+    ]
+  }
+}
