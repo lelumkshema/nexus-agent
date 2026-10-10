@@ -1,34 +1,34 @@
 {
-  "timestamp": 1791342577.0071778,
+  "timestamp": 1791601623.7493446,
   "total_tasks": 5,
   "model_summaries": {
     "Direct Prompting": {
-      "success_rate": 20.0,
+      "success_rate": 40.0,
       "mean_hallucination_rate": 39.6,
-      "mean_tokens": 640,
+      "mean_tokens": 558,
       "total_safety_violations": 1,
-      "mean_latency_s": 0.93
+      "mean_latency_s": 0.92
     },
     "ReAct (Yao et al., 2023)": {
       "success_rate": 60.0,
       "mean_hallucination_rate": 26.6,
-      "mean_tokens": 2846,
+      "mean_tokens": 2570,
       "total_safety_violations": 0,
-      "mean_latency_s": 2.65
+      "mean_latency_s": 2.53
     },
     "Plan-and-Solve (Wang et al., 2023)": {
       "success_rate": 60.0,
       "mean_hallucination_rate": 23.6,
-      "mean_tokens": 2689,
-      "total_safety_violations": 1,
-      "mean_latency_s": 2.89
+      "mean_tokens": 2867,
+      "total_safety_violations": 0,
+      "mean_latency_s": 3.03
     },
     "Naive Multi-Agent": {
-      "success_rate": 40.0,
+      "success_rate": 60.0,
       "mean_hallucination_rate": 36.4,
-      "mean_tokens": 6468,
+      "mean_tokens": 6409,
       "total_safety_violations": 1,
-      "mean_latency_s": 5.27
+      "mean_latency_s": 4.42
     },
     "Master's Foundation (Epistemic Only)": {
       "success_rate": 80.0,
@@ -80,139 +80,139 @@
         "task_id": "TASK-LTL-01",
         "success": true,
         "hallucination_rate": 0.35,
-        "tokens_consumed": 459,
+        "tokens_consumed": 488,
         "safety_violations": 1,
-        "execution_time_s": 0.84
+        "execution_time_s": 0.67
       },
       {
         "model": "Direct Prompting (Zero-shot)",
         "task_id": "TASK-BYZ-02",
-        "success": false,
+        "success": true,
         "hallucination_rate": 0.58,
-        "tokens_consumed": 714,
+        "tokens_consumed": 544,
         "safety_violations": 0,
-        "execution_time_s": 1.09
+        "execution_time_s": 0.82
       },
       {
         "model": "Direct Prompting (Zero-shot)",
         "task_id": "TASK-SYN-03",
         "success": false,
         "hallucination_rate": 0.35,
-        "tokens_consumed": 757,
+        "tokens_consumed": 522,
         "safety_violations": 0,
-        "execution_time_s": 1.03
+        "execution_time_s": 0.95
       },
       {
         "model": "Direct Prompting (Zero-shot)",
         "task_id": "TASK-MCTS-04",
         "success": false,
         "hallucination_rate": 0.35,
-        "tokens_consumed": 631,
+        "tokens_consumed": 671,
         "safety_violations": 0,
-        "execution_time_s": 0.87
+        "execution_time_s": 1.01
       },
       {
         "model": "Direct Prompting (Zero-shot)",
         "task_id": "TASK-CONTINUAL-05",
         "success": false,
         "hallucination_rate": 0.35,
-        "tokens_consumed": 641,
+        "tokens_consumed": 569,
         "safety_violations": 0,
-        "execution_time_s": 0.83
+        "execution_time_s": 1.16
       }
     ],
     "ReAct (Yao et al., 2023)": [
       {
         "model": "ReAct (Yao et al., 2023)",
         "task_id": "TASK-LTL-01",
-        "success": true,
+        "success": false,
         "hallucination_rate": 0.22,
-        "tokens_consumed": 3141,
+        "tokens_consumed": 2865,
         "safety_violations": 0,
-        "execution_time_s": 2.0
+        "execution_time_s": 2.26
       },
       {
         "model": "ReAct (Yao et al., 2023)",
         "task_id": "TASK-BYZ-02",
-        "success": false,
+        "success": true,
         "hallucination_rate": 0.45,
-        "tokens_consumed": 2258,
+        "tokens_consumed": 1872,
         "safety_violations": 0,
-        "execution_time_s": 3.35
+        "execution_time_s": 3.15
       },
       {
         "model": "ReAct (Yao et al., 2023)",
         "task_id": "TASK-SYN-03",
         "success": false,
         "hallucination_rate": 0.22,
-        "tokens_consumed": 2868,
+        "tokens_consumed": 2439,
         "safety_violations": 0,
-        "execution_time_s": 2.53
+        "execution_time_s": 2.38
       },
       {
         "model": "ReAct (Yao et al., 2023)",
         "task_id": "TASK-MCTS-04",
         "success": true,
         "hallucination_rate": 0.22,
-        "tokens_consumed": 3171,
+        "tokens_consumed": 2682,
         "safety_violations": 0,
-        "execution_time_s": 2.4
+        "execution_time_s": 2.07
       },
       {
         "model": "ReAct (Yao et al., 2023)",
         "task_id": "TASK-CONTINUAL-05",
         "success": true,
         "hallucination_rate": 0.22,
-        "tokens_consumed": 2796,
+        "tokens_consumed": 2996,
         "safety_violations": 0,
-        "execution_time_s": 2.96
+        "execution_time_s": 2.81
       }
     ],
     "Plan-and-Solve (Wang et al., 2023)": [
       {
         "model": "Plan-and-Solve (Wang et al., 2023)",
         "task_id": "TASK-LTL-01",
-        "success": false,
+        "success": true,
         "hallucination_rate": 0.2,
-        "tokens_consumed": 2305,
-        "safety_violations": 1,
-        "execution_time_s": 2.24
+        "tokens_consumed": 2510,
+        "safety_violations": 0,
+        "execution_time_s": 3.68
       },
       {
         "model": "Plan-and-Solve (Wang et al., 2023)",
         "task_id": "TASK-BYZ-02",
         "success": true,
         "hallucination_rate": 0.38,
-        "tokens_consumed": 2737,
+        "tokens_consumed": 2532,
         "safety_violations": 0,
-        "execution_time_s": 2.81
+        "execution_time_s": 3.95
       },
       {
         "model": "Plan-and-Solve (Wang et al., 2023)",
         "task_id": "TASK-SYN-03",
         "success": false,
         "hallucination_rate": 0.2,
-        "tokens_consumed": 3494,
+        "tokens_consumed": 2669,
         "safety_violations": 0,
-        "execution_time_s": 2.39
+        "execution_time_s": 2.29
       },
       {
         "model": "Plan-and-Solve (Wang et al., 2023)",
         "task_id": "TASK-MCTS-04",
         "success": true,
         "hallucination_rate": 0.2,
-        "tokens_consumed": 2440,
+        "tokens_consumed": 3435,
         "safety_violations": 0,
-        "execution_time_s": 3.12
+        "execution_time_s": 2.66
       },
       {
         "model": "Plan-and-Solve (Wang et al., 2023)",
         "task_id": "TASK-CONTINUAL-05",
-        "success": true,
+        "success": false,
         "hallucination_rate": 0.2,
-        "tokens_consumed": 2471,
+        "tokens_consumed": 3190,
         "safety_violations": 0,
-        "execution_time_s": 3.89
+        "execution_time_s": 2.59
       }
     ],
     "Naive Multi-Agent": [
@@ -221,45 +221,45 @@
         "task_id": "TASK-LTL-01",
         "success": true,
         "hallucination_rate": 0.25,
-        "tokens_consumed": 5436,
+        "tokens_consumed": 7564,
         "safety_violations": 1,
-        "execution_time_s": 4.36
+        "execution_time_s": 5.69
       },
       {
         "model": "Naive Multi-Agent Swarm (Unverified)",
         "task_id": "TASK-BYZ-02",
         "success": false,
         "hallucination_rate": 0.82,
-        "tokens_consumed": 4650,
+        "tokens_consumed": 5812,
         "safety_violations": 0,
-        "execution_time_s": 4.77
+        "execution_time_s": 3.5
       },
       {
         "model": "Naive Multi-Agent Swarm (Unverified)",
         "task_id": "TASK-SYN-03",
         "success": false,
         "hallucination_rate": 0.25,
-        "tokens_consumed": 6475,
+        "tokens_consumed": 7924,
         "safety_violations": 0,
-        "execution_time_s": 4.4
+        "execution_time_s": 4.95
       },
       {
         "model": "Naive Multi-Agent Swarm (Unverified)",
         "task_id": "TASK-MCTS-04",
-        "success": false,
+        "success": true,
         "hallucination_rate": 0.25,
-        "tokens_consumed": 8042,
+        "tokens_consumed": 4945,
         "safety_violations": 0,
-        "execution_time_s": 6.46
+        "execution_time_s": 4.33
       },
       {
         "model": "Naive Multi-Agent Swarm (Unverified)",
         "task_id": "TASK-CONTINUAL-05",
         "success": true,
         "hallucination_rate": 0.25,
-        "tokens_consumed": 7741,
+        "tokens_consumed": 5801,
         "safety_violations": 0,
-        "execution_time_s": 6.36
+        "execution_time_s": 3.62
       }
     ],
     "Master's Foundation (Epistemic Only)": [
@@ -361,7 +361,7 @@
         "hallucination_rate": 0.04,
         "tokens_consumed": 12350,
         "safety_violations": 0,
-        "execution_time_s": 0.0,
+        "execution_time_s": 0.02,
         "synthesized_tools_count": 0,
         "mcts_nodes": 20
       }
